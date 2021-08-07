@@ -27,7 +27,7 @@ void main() {
     date = faker.date.dateTime();
   });
 
-  test('should return space media model when calls the datasource', () async {
+  test('should return space media model when calls the datasources', () async {
     when(() => datasource.getSpaceMediaFromDate(date: date)).thenAnswer((_) async => model);
     final result = await repository.getSpaceMediaFromDate(date: date);
 
@@ -36,7 +36,7 @@ void main() {
     verify(() => datasource.getSpaceMediaFromDate(date: date));
   });
 
-  test('should return a server failure space when call to datasource is unsuccessful', () async {
+  test('should return a server failure space when call to datasources is unsuccessful', () async {
     when(() => datasource.getSpaceMediaFromDate(date: date)).thenThrow(ServerException());
     final result = await repository.getSpaceMediaFromDate(date: date);
 

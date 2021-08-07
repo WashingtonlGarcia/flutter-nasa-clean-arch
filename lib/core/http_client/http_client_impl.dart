@@ -6,7 +6,11 @@ class HttpClientImpl implements HttpClient {
 
   @override
   Future<HttpResponse> get(String url) async {
-    final response = await dio.get(url);
-    return HttpResponse(data: response.data, statusCode: response.statusCode);
+    try {
+      final response = await dio.get(url);
+      return HttpResponse(data: response.data, statusCode: response.statusCode);
+    }on DioError catch(error){
+      return HttpResponse(data: error.message, statusCode: 400);
+    }
   }
 }

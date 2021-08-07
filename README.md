@@ -1,16 +1,15 @@
-# flutter_nasa_clean_arch
+<img alt="Ignite" src="lib/features/presenter/assets/images/wallpaper.jpg"/>
 
-A new Flutter project.
+<h3 align="center">
+  Nasa Clean Architecture
+</h3>
 
-## Getting Started
+<blockquote align="center">“Nothing in the world beats persistence.”!</blockquote>
 
-This project is a starting point for a Flutter application.
+## :rocket: About
 
-A few resources to get you started if this is your first Flutter project:
+The project was developed using nasa api, applying clean architecture and tdd.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## :memo: License
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is under license from MIT. See the [LICENSE](LICENSE) file for more details.
